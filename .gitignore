@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outputs / temp
+*.log
+*.tmp
+demo_test.log
+demo_test.err
+
+# Model weights and large data (never commit)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.gguf
+*.safetensors
+data/
+models/
+checkpoints/
+
+# Cached predictions are intentionally included as test fixtures; keep them.
+!demo/cached_responses.json
