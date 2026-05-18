@@ -16,7 +16,7 @@ Unlike generic LLM "explain this molecule" tools, this system **refuses to guess
 
 ## Watch the 3-minute demo
 
-📺 **[YouTube — Meridian × Gemma 4 Demo](https://youtu.be/PLACEHOLDER_REPLACE_BEFORE_SUBMIT)**
+📺 **[YouTube — Meridian × Gemma 4 Demo](https://youtu.be/Z3E1T0q3-bU)**
 
 ## What the system does
 
