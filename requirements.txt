@@ -1,0 +1,13 @@
+# Minimal dependencies for the integration layer.
+# Gemma 4 is accessed via Ollama HTTP API - no Python client required.
+# Meridian is accessed via HTTP - urllib (stdlib) is sufficient.
+#
+# This file is here primarily for completeness; the demo runs on stdlib alone.
+# Add optional dev/visualization deps only if needed.
+
+# (no required runtime deps - stdlib only)
+
+# Optional: for richer notebook-style demos
+# jupyter>=1.0
+# pandas>=2.0
+# matplotlib>=3.7
