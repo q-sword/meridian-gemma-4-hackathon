@@ -14,6 +14,14 @@ Unlike generic LLM "explain this molecule" tools, this system **refuses to guess
 
 **The technical novelty: thermodynamic consistency by architectural construction.** Van't Hoff (ΔG = −RT·ln(10)·pKd) and the Gibbs equation (ΔG = ΔH + mTΔS) are *exact thermodynamic identities*, not things to learn. We enforce them analytically at inference. The model's only learned thermodynamic quantity is ΔH; ΔG and mTΔS are derived. This was the [outcome of a bug we caught on May 14](docs/analytic_thermodynamics.md) — the original training z-normalized loss had stripped absolute scale from the thermo heads.
 
+## Try it live
+
+🌐 **[meridian.swordlabs.org](https://meridian.swordlabs.org/)** — live Next.js UI talking to a local v_clean_005c instance via a Cloudflare named tunnel. Three sections worth clicking:
+
+- **Predict** — pick a drug from the 17-drug panel (or paste any SMILES), pick a target, see calibrated pKd with 80% CI, full ΔG/ΔH/mTΔS thermodynamic decomposition, calibration provenance (direct anchor vs. ESM-extrapolated), and Lipinski properties.
+- **Chat** — Gemma 4 e4b with the three Meridian tools wired in. Try *"compare DSM265 to atovaquone against PfDHODH"* or *"is sotorasib selective for KRAS G12C?"*. Tool calls render inline with latency.
+- **Library** — the 17-drug panel with verified SMILES and canonical targets.
+
 ## Watch the 3-minute demo
 
 📺 **[YouTube — Meridian × Gemma 4 Demo](https://youtu.be/Z3E1T0q3-bU)**
